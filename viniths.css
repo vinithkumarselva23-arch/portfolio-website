@@ -1,0 +1,726 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.contactbox {
+    min-height:500px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    background-color:transparent;
+    .CONTECTBTN{
+         font-size: 30px;
+         color: wheat;
+         background-color: black;
+         height: 50px;
+         width: 50px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 50%;
+          
+    }
+}
+
+ /* row2/colurm-2  */
+ .buttons3{
+    margin-top:-10px;
+ }
+ .card{
+    min-height:200px;
+    min-width:300px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px !important;
+    background-color: wheat !important;
+ }
+ .b1{
+     border-top-left-radius: 20px !important;
+     border-top-right-radius: 20px !important;
+     margin: 0px 10px;
+     background-color: wheat !important;
+     color: black !important;
+     border-color: black !important;
+     padding-top: -60px;
+     
+ }
+
+  /* persentage card  */
+.overallc1{
+    display: flex;
+    flex-direction: column; 
+    margin:10px;
+    margin-top: 10px;
+     .c1{
+    height:10px ;
+    width:80%;
+    background-color: silver;
+    border-radius: 20px; 
+    overflow: hidden;   
+}
+}
+
+.c2{
+  transform-origin: left;
+    animation: expand 2s ease forwards;
+    transition: transform 2s ease;
+}
+.c2:hover{
+transform: scaleX(2);
+animation: none;
+}
+/* .c2:active{
+    animation: none;
+transform: scaleX(2);
+} */
+@keyframes expand {
+    from{
+        transform: scaleX(0.5);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}
+.IMG{
+    position: relative;
+    border-bottom-right-radius: 50px;
+    margin: 50px;
+
+}
+.bg{
+display: block;
+padding-top: 70px;
+filter: blur(20%);
+height:550px;
+width: 450px;
+
+
+}
+.ashil{
+    height: 510px;
+    width: 380px;
+    position: absolute;
+    top:20px;
+    margin-left: 60px;   
+}
+/* =========================================
+   LAPTOP / DESKTOP
+   1024px and above
+========================================= */
+
+@media (min-width: 1024px) {
+
+    .container-fluid {
+        min-height: 100vh;
+        height: auto !important;
+        overflow-x: hidden;
+    }
+
+    nav {
+        width: 100% !important;
+        min-height: 100px;
+    }
+
+    .row > .col-7 {
+        width: 58.333333% !important;
+        padding-left: 10% !important;
+    }
+
+    .row > .col-5 {
+        width: 41.666667% !important;
+    }
+
+    .IMG {
+        width: 450px;
+        max-width: 100%;
+        margin: 50px auto;
+    }
+
+    .bg {
+        width: 450px;
+        max-width: 100%;
+        height: 550px;
+    }
+
+    .ashil {
+        width: 380px;
+        max-width: 85%;
+        height: 510px;
+        max-height: 100%;
+        margin-left: 60px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 650px;
+    }
+}
+
+
+/* =========================================
+   TABLET
+   768px - 1023px
+========================================= */
+
+@media (min-width: 558px) and (max-width: 1023px) {
+
+    .container-fluid {
+        height: auto !important;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    /* NAVBAR */
+
+    nav {
+        width: 100% !important;
+        min-height: 90px !important;
+        padding: 15px !important;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+
+    nav h1 {
+        font-size: 28px !important;
+    }
+
+    nav button {
+        padding: 8px 10px !important;
+        margin: 2px !important;
+    }
+
+    nav button h5 {
+        font-size: 12px !important;
+        margin: 0;
+    }
+
+    /* SOCIAL ICONS */
+
+    .contactbox {
+        width: 70px !important;
+        min-width: 70px !important;
+        min-height: 400px !important;
+        gap: 15px !important;
+        z-index: 10;
+    }
+
+    .CONTECTBTN {
+        width: 42px !important;
+        height: 42px !important;
+        font-size: 24px !important;
+    }
+
+    /* LEFT CONTENT */
+
+    .row > .col-7 {
+        width: 60% !important;
+        padding-left: 10% !important;
+        padding-right: 3% !important;
+    }
+
+    .row > .col-7 h1 {
+        font-size: 23px !important;
+        line-height: 1.4;
+    }
+
+    .row > .col-7 p {
+        font-size: 17px !important;
+        line-height: 1.6;
+    }
+
+    /* BUTTONS */
+
+    .btn-group {
+        display: flex !important;
+        gap: 8px !important;
+        padding-top: 20px !important;
+    }
+
+    .b1 {
+        margin: 0 !important;
+        font-size: 12px !important;
+        padding: 8px 12px !important;
+    }
+
+    /* SKILL CARD */
+
+    .card {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin-top: 20px !important;
+    }
+
+    /* IMAGE */
+
+    .row > .col-5 {
+        width: 40% !important;
+        height: auto !important;
+    }
+
+    .IMG {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .bg {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+        object-fit: contain;
+        padding-top: 20px !important;
+    }
+
+    .ashil {
+        width: 85%;
+        height: auto;
+        max-height: 470px;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 0 !important;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   481px - 767px
+========================================= */
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .container-fluid {
+        height: auto !important;
+        min-height: 100vh;
+        overflow-x: hidden;
+        padding-bottom: 30px;
+    }
+
+    /* NAVBAR */
+
+    nav {
+        width: 100% !important;
+        min-height: auto !important;
+        padding: 15px 10px !important;
+
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+
+        gap: 10px;
+    }
+
+    nav header:first-child {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav h1 {
+        font-size: 30px !important;
+        margin: 0 !important;
+    }
+
+    nav header:last-child {
+        width: 100%;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    nav button {
+        min-width: 80px !important;
+        padding: 7px 10px !important;
+        margin: 0 !important;
+    }
+
+    nav button h5 {
+        font-size: 10px !important;
+        margin: 0;
+    }
+
+    /* SOCIAL BAR */
+
+    .contactbox {
+        position: fixed !important;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 45px !important;
+        min-width: 45px !important;
+        min-height: auto !important;
+
+        gap: 10px !important;
+        z-index: 100;
+    }
+
+    .CONTECTBTN {
+        width: 38px !important;
+        height: 38px !important;
+        font-size: 20px !important;
+    }
+
+    /* MAIN CONTENT */
+
+    .row > .col-7,
+    .row > .col-5 {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* TEXT */
+
+    .row > .col-7 {
+        min-height: auto !important;
+        padding: 30px 30px 0 65px !important;
+        margin-top: 0 !important;
+    }
+
+    .row > .col-7 h1 {
+        font-size: 23px !important;
+        line-height: 1.4;
+        margin-top: 10px !important;
+    }
+
+    .row > .col-7 p {
+        font-size: 16px !important;
+        line-height: 1.6;
+    }
+
+    /* THREE BUTTONS */
+
+    .btn-group {
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 8px !important;
+        padding-top: 15px !important;
+    }
+
+    .b1 {
+        flex: 1;
+        min-width: 100px;
+        margin: 0 !important;
+        font-size: 11px !important;
+    }
+
+    /* SKILLS CARD */
+
+    .card {
+        width: 100% !important;
+        min-width: 0 !important;
+        margin-top: 20px !important;
+    }
+
+    /* IMAGE */
+
+    .row > .col-5 {
+        height: auto !important;
+        min-height: 450px !important;
+        margin-top: 20px;
+    }
+
+    .IMG {
+        width: 90%;
+        max-width: 400px;
+        margin: 20px auto;
+    }
+
+    .bg {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+        padding-top: 0 !important;
+        object-fit: contain;
+    }
+
+    .ashil {
+        width: 85%;
+        height: auto;
+        max-height: 480px;
+
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        margin-left: 0 !important;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   320px - 480px
+========================================= */
+
+@media (max-width: 480px) {
+
+    .container-fluid {
+        height: auto !important;
+        min-height: 100vh;
+        overflow-x: hidden;
+        padding-bottom: 30px;
+    }
+
+    /* NAVBAR */
+
+    nav {
+        width: 100% !important;
+        min-height: auto !important;
+
+        display: flex !important;
+        flex-direction: column;
+
+        justify-content: center !important;
+        align-items: center !important;
+
+        padding: 12px 5px !important;
+        gap: 8px;
+    }
+
+    nav header:first-child {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav h1 {
+        font-size: 25px !important;
+        margin: 0 !important;
+    }
+
+    nav header:last-child {
+        width: 100%;
+
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    nav button {
+        min-width: 65px !important;
+        padding: 6px 5px !important;
+        margin: 0 !important;
+    }
+
+    nav button h5 {
+        font-size: 9px !important;
+        margin: 0 !important;
+    }
+
+    /* SOCIAL ICONS */
+
+    .contactbox {
+        position: fixed !important;
+
+        left: 2px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 40px !important;
+        min-width: 40px !important;
+        min-height: auto !important;
+
+        gap: 8px !important;
+
+        z-index: 100;
+    }
+
+    .CONTECTBTN {
+        width: 34px !important;
+        height: 34px !important;
+        font-size: 17px !important;
+    }
+
+    /* MAIN COLUMNS */
+
+    .row > .col-7,
+    .row > .col-5 {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* CONTENT */
+
+    .row > .col-7 {
+        min-height: auto !important;
+
+        padding-left: 50px !important;
+        padding-right: 15px !important;
+
+        padding-top: 25px !important;
+        margin-top: 0 !important;
+    }
+
+    .row > .col-7 h1 {
+        font-size: 20px !important;
+        line-height: 1.4;
+
+        margin-top: 10px !important;
+    }
+
+    .row > .col-7 p {
+        font-size: 14px !important;
+        line-height: 1.6;
+    }
+
+    /* BUTTONS */
+
+    .btn-group {
+        width: 100%;
+
+        display: flex !important;
+        flex-wrap: wrap;
+
+        gap: 6px !important;
+
+        padding-top: 12px !important;
+    }
+
+    .b1 {
+        flex: 1 1 30%;
+
+        min-width: 75px;
+
+        margin: 0 !important;
+
+        padding: 7px 5px !important;
+
+        font-size: 9px !important;
+    }
+
+    /* SKILL CARD */
+
+    .card {
+        width: 100% !important;
+        min-width: 0 !important;
+
+        margin-top: 20px !important;
+
+        padding: 5px !important;
+    }
+
+    .overallc1 {
+        width: 100%;
+        margin: 5px !important;
+    }
+
+    .overallc1 p {
+        font-size: 12px !important;
+    }
+
+    .overallc1 h5 {
+        font-size: 12px !important;
+    }
+
+    /* IMAGE */
+
+    .row > .col-5 {
+        height: auto !important;
+        min-height: 380px !important;
+
+        margin-top: 20px;
+    }
+
+    .IMG {
+        width: 95%;
+        max-width: 380px;
+
+        margin: 10px auto 30px auto;
+    }
+
+    .bg {
+        width: 100%;
+        height: auto;
+
+        max-height: 450px;
+
+        padding-top: 0 !important;
+
+        object-fit: contain;
+    }
+
+    .ashil {
+        width: 85%;
+        height: auto;
+
+        max-height: 430px;
+
+        top: 5px;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        margin-left: 0 !important;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+   Below 360px
+========================================= */
+
+@media (max-width: 360px) {
+
+    nav h1 {
+        font-size: 22px !important;
+    }
+
+    nav button {
+        min-width: 58px !important;
+        padding: 5px 3px !important;
+    }
+
+    nav button h5 {
+        font-size: 8px !important;
+    }
+
+    .contactbox {
+        width: 36px !important;
+        min-width: 36px !important;
+        left: 1px;
+    }
+
+    .CONTECTBTN {
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 15px !important;
+    }
+
+    .row > .col-7 {
+        padding-left: 45px !important;
+        padding-right: 10px !important;
+    }
+
+    .row > .col-7 h1 {
+        font-size: 18px !important;
+    }
+
+    .row > .col-7 p {
+        font-size: 13px !important;
+    }
+
+    .b1 {
+        min-width: 65px !important;
+        font-size: 8px !important;
+    }
+
+    .card {
+        margin-top: 15px !important;
+    }
+
+    .row > .col-5 {
+        min-height: 350px !important;
+    }
+}
